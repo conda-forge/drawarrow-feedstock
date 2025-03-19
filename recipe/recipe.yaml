@@ -1,6 +1,6 @@
 context:
   name: drawarrow
-  version: "0.0.3"
+  version: "0.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/drawarrow/drawarrow-${{ version }}.tar.gz
-  sha256: a2cc93e91bc4562a80507bf46000108d37d365ce0a14aa86432833f0ec809319
+  sha256: e7be36bac90f13054e58b3ea8ffaa52f9c13a6189c25d86d2a930a00c26875ad
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
 tests:
   - python:
       imports:
-      - drawarrow
+        - drawarrow
       pip_check: true
       python_version: ${{ python_min }}.*
 
